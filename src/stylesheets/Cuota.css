@@ -1,0 +1,38 @@
+
+.cuotaAnual{
+  width: 165px;
+  height: 40px;
+  font-size: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end; /* Alinea horizontalmente a la derecha */
+  align-items:flex-end; 
+  color: #1b1b32;
+  background-color: rgb(245, 241, 207);
+  margin-left: 15px;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+.cuotaMensual {
+  width: 165px;
+  height: 40px;
+  font-size: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end; /* Alinea horizontalmente a la derecha */
+  align-items: flex-end; /* Alinea al final*/
+  color:#1b1b32;
+  background-color: rgb(245, 241, 207);
+  margin-left: 15px;
+  border: 2px solid white;
+  border-radius: 7px;
+  
+}
+
+.mensajeError{
+  font-size: 0.8em;
+  color: #1b1b32;
+}

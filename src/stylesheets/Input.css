@@ -1,0 +1,60 @@
+.contenedorInput {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #21213b;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 165px;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: 40px;
+    text-align: right;
+    color: #1b1b32;
+    background-color: #e2fbff;
+    border-radius: 7px;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+.input.errorInput {
+    width: 165px;
+    height: 40px;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #e2fbff;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.mensajeDeError {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    margin: 15px 0px;
+}
+
+/* Estilos para la pseudoclase :focus */
+.input:focus {
+    border-color: #00d9ff;
+    /* Color del borde al hacer clic */
+    outline: none;
+    /* Eliminar el contorno predeterminado */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .input:focus {
+        border-color: #993636;
+        padding: 0;
+        /* Color del borde al hacer clic en móvil */
+    }
+}

@@ -1,0 +1,22 @@
+.boton-calcular{
+  width: 165px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background-color: #006779;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: 90px 0px -80px 15px;
+    cursor: pointer;
+
+  }
+  
+  .boton-calcular:hover{
+    background-color: white;
+    color: #1b1b32;
+    border: 2px solid #006779;
+  }
+  

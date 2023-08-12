@@ -1,38 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  background-color:#1b1b32;
+}
+
+/* Estilos generales de la aplicación */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  max-height: 70vh; /* Ocupar todo el alto de la ventana */
+  max-width: 600px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente de la aplicación */
+  display: flex; /* Aplicar un diseño de caja flexible */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: end;
+  padding: 30px; /* Espacio alrededor del contenido */
+  margin: 20px;
+  border: 2px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.contenedorPrincipal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start; /* Alinear verticalmente arriba */
+  flex-direction: row;
+  justify-content: space-around; /* Distribuir el espacio entre los contenidos */
+  align-items: center;
+  padding: 10px 20px 0px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contenedorTitulo {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Alinear los elementos verticalmente */
+  margin-top: 20px;
+}
+
+h1 {
+  width:100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro */
+  justify-content: center;
+  text-align: center;
+  color: #b4f2fd;
+  padding-bottom: 60px;
+  margin-top: 40px; /* Añadir espacio superior al título */
+}
+
+h2{
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #b4f2fd;
+  margin: 30px 0px 8px 15px;
 }
