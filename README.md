@@ -9,8 +9,8 @@ Esta aplicación es un simulador de préstamos que te permite calcular la cuota 
 ## Cómo empezar
 
 1. Clona este repositorio en tu máquina local.
-2. Ejecuta  `###npm install` para instalar las dependencias.
-3. Ejecuta  `###npm start` para iniciar la aplicación en modo de desarrollo.
+2. Ejecuta  `### npm install` para instalar las dependencias.
+3. Ejecuta  `### npm start` para iniciar la aplicación en modo de desarrollo.
   -se pondrá en marcha la aplicacion 
 4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
   -puedes detener la aplicacion con ###Ctrl + C,
