@@ -7,10 +7,10 @@ Este proyecto fue creado con Create React App.
 Esta aplicación es un simulador de préstamos que te permite calcular la cuota anual y mensual a devolver, basada en el método francés de interés compuesto. Simplemente ingresa el valor del capital, el interés a aplicar y el plazo de amortización, y la calculadora te mostrará los resultados.
 
 ## Cómo empezar
-
+### `npm start`
 1. Clona este repositorio en tu máquina local.
-2. Ejecuta  `### npm install` para instalar las dependencias.
-3. Ejecuta  `### npm start` para iniciar la aplicación en modo de desarrollo.
+2. Ejecuta  `npm install` para instalar las dependencias.
+3. Ejecuta  `npm start` para iniciar la aplicación en modo de desarrollo.
   -se pondrá en marcha la aplicacion 
 4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
   -puedes detener la aplicacion con ###Ctrl + C,
