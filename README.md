@@ -2,9 +2,12 @@
 
 Este proyecto fue creado con Create React App.
 
-## Descrpción
+## Descripción
 
 Esta aplicación es un simulador de préstamos que te permite calcular la cuota anual y mensual a devolver, basada en el método francés de interés compuesto. Simplemente ingresa el valor del capital, el interés a aplicar y el plazo de amortización, y la calculadora te mostrará los resultados.
+
+![msg-337637371-26306 (1)](https://github.com/Juan-Fuente-T/calculadora_prestamos_GUI_React/assets/127140423/7bfa5f50-e0fc-4b26-8275-35ccc69d6382)
+
 
 ## Cómo empezar
 
@@ -35,6 +38,8 @@ Donde:
 - `Capital` es el valor del préstamo.
 - `Tasa de Interés` es el interés anual o mensual aplicado.
 - `Plazo` es el plazo de amortización en años.
+  
+Es la fórmula habitualmente utilizada para los prestamos bancarios personales e hipotecas
 
 ## Aprende más
 
