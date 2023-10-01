@@ -1,31 +1,32 @@
 .contenedorInput {
     width: 100%;
-    height: 52px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: #21213b;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .input {
-    width: 165px;
+    width: 150px;
     font-size: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    height: 40px;
+    height: 35px;
     text-align: right;
     color: #1b1b32;
     background-color: #e2fbff;
     border-radius: 7px;
-    padding: 20px;
-    margin-right: 15px;
+    padding: 17px;
+    margin-right: 40px;
 }
 
 .input.errorInput {
-    width: 165px;
-    height: 40px;
+    width: 150px;
+    height: 35px;
     font-size: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -51,10 +52,20 @@
 }
 
 /* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+
+    .contenedorInput{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .input {
+        max-width: 60%;
+        font-size: 1rem; 
+        margin-right: 3px;
+      }
+
     .input:focus {
-        border-color: #993636;
-        padding: 0;
-        /* Color del borde al hacer clic en móvil */
+        border-color: #00d9ff; 
     }
 }

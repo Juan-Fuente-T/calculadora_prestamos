@@ -1,6 +1,6 @@
 .boton-calcular{
-  width: 165px;
-    height: 40px;
+  width: 150px;
+    height: 35px;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -9,7 +9,7 @@
     background-color: #006779;
     border: 2px solid white;
     border-radius: 7px;
-    margin: 90px 0px -80px 15px;
+    margin: 90px 0px -80px 25px;
     cursor: pointer;
 
   }
@@ -18,5 +18,13 @@
     background-color: white;
     color: #1b1b32;
     border: 2px solid #006779;
+  }
+
+  @media (max-width: 480px) {
+    .boton-calcular {
+      max-width: 60%;
+      font-size: 1rem; 
+      margin: 50px 0px 0px 0px;
+    }
   }
   

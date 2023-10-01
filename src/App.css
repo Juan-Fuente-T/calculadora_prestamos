@@ -10,6 +10,7 @@ body, html {
   justify-content: center; /* Centrar verticalmente */
   align-items: center; /* Centrar horizontalmente */
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -18,16 +19,17 @@ body, html {
 .App {
    /* Establece el ancho máximo para la aplicación */
   width: 100%; /* Garantiza que la aplicación ocupe todo el ancho disponible */
-  max-height: 100%; /* Establece el alto máximo para la aplicación */
+  max-width: 100%; /* Establece el alto máximo para la aplicación */
   height: auto; 
   font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente de la aplicación */
   display: flex; /* Aplicar un diseño de caja flexible */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: end;
+
   padding: 30px; /* Espacio alrededor del contenido */
   border: 2px solid white;
+  border-radius: 12px;
   max-height: 75vh; /* Ocupar todo el alto de la ventana */
   margin: auto; /* Centrar horizontalmente */
   width: 100%; /* Hacer que la aplicación ocupe todo el ancho */
@@ -38,15 +40,16 @@ body, html {
 
 .contenedorPrincipal {
  
-  width: 80%;
-  max-width: 450px;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   display: flex;
   align-items: flex-start; /* Alinear verticalmente arriba */
   flex-direction: row;
   justify-content: space-around; /* Distribuir el espacio entre los contenidos */
   align-items: center;
-  padding: 20px 20px 0px 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .contenedorTitulo {
@@ -78,7 +81,7 @@ h2{
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: left;
   color: #b4f2fd;
   margin: 30px 0px 8px 15px;
 }
@@ -90,20 +93,22 @@ h2{
 .App {
   
   width: 100%; /* Ocupar todo el ancho disponible */
+  max-width: 100%;
   height: auto;
   margin: 0; /* Eliminar el margen para centrar correctamente */
   padding: 5px; /* Espacio alrededor del contenido en dispositivos pequeños */
   max-height: 100%; /* Establece el alto máximo para la aplicación */
   height: 100%;/* Eliminar la altura máxima en dispositivos pequeños */
   box-sizing: border-box;
+  
 }
 
 .contenedorPrincipal {
 
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
   display: flex;
-  align-items: flex-start; /* Alinear verticalmente arriba */
+  align-items: center; /* Alinear verticalmente arriba */
   flex-direction: row;
   justify-content: center; /* Distribuir el espacio entre los contenidos */
   align-items: center;
@@ -126,7 +131,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem; /* Reducir el tamaño del subtítulo */
+  font-size: 80%; /* Reducir el tamaño del subtítulo */
   margin: 10px 0px 8px 0px;
+  display: flex;
+  justify-content: center;
 }
 }
