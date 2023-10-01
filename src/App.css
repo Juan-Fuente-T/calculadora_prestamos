@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
-body, html{
-  background-color:#1b1b32;
+body, html {
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos generales de la aplicación */
 .App {
-  max-height: 70vh; /* Ocupar todo el alto de la ventana */
-  max-width: 600px;
+   /* Establece el ancho máximo para la aplicación */
+  width: 100%; /* Garantiza que la aplicación ocupe todo el ancho disponible */
+  max-height: 100%; /* Establece el alto máximo para la aplicación */
+  height: auto; 
   font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente de la aplicación */
   display: flex; /* Aplicar un diseño de caja flexible */
   flex-direction: column;
@@ -19,19 +27,26 @@ body, html{
   justify-content: center;
   text-align: end;
   padding: 30px; /* Espacio alrededor del contenido */
-  margin: 20px;
   border: 2px solid white;
+  max-height: 75vh; /* Ocupar todo el alto de la ventana */
+  margin: auto; /* Centrar horizontalmente */
+  width: 100%; /* Hacer que la aplicación ocupe todo el ancho */
+  box-sizing: border-box;
 }
 
+
+
 .contenedorPrincipal {
-  width: 100%;
-  height: 100%;
+ 
+  width: 80%;
+  max-width: 450px;
+  height: auto;
   display: flex;
   align-items: flex-start; /* Alinear verticalmente arriba */
   flex-direction: row;
   justify-content: space-around; /* Distribuir el espacio entre los contenidos */
   align-items: center;
-  padding: 10px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .contenedorTitulo {
@@ -66,4 +81,52 @@ h2{
   justify-content: flex-start;
   color: #b4f2fd;
   margin: 30px 0px 8px 15px;
+}
+
+/* Ajustar tamaños en dispositivos pequeños */
+@media (max-width: 480px) {
+
+/* Restablecer márgenes y máximos en dispositivos pequeños */
+.App {
+  
+  width: 100%; /* Ocupar todo el ancho disponible */
+  height: auto;
+  margin: 0; /* Eliminar el margen para centrar correctamente */
+  padding: 5px; /* Espacio alrededor del contenido en dispositivos pequeños */
+  max-height: 100%; /* Establece el alto máximo para la aplicación */
+  height: 100%;/* Eliminar la altura máxima en dispositivos pequeños */
+  box-sizing: border-box;
+}
+
+.contenedorPrincipal {
+
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  align-items: flex-start; /* Alinear verticalmente arriba */
+  flex-direction: row;
+  justify-content: center; /* Distribuir el espacio entre los contenidos */
+  align-items: center;
+  margin-top: 12px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+
+.contenedorTitulo {
+  margin-top: 10px; /* Reduce el espacio superior en dispositivos pequeños */
+}
+
+/* Ajustar estilos de los elementos internos según sea necesario */
+h1 {
+  font-size: 1rem; /* Reducir el tamaño del título */
+  padding-bottom: 30px;
+  margin-top: 20px;
+  
+}
+
+h2 {
+  font-size: 1rem; /* Reducir el tamaño del subtítulo */
+  margin: 10px 0px 8px 0px;
+}
 }
